@@ -11,24 +11,28 @@ struct ContentView: View {
     let data = Array(1...1000).map { "Item \($0)" }
     
     let layout = [
-        GridItem(.flexible(maximum: 80)),
-        GridItem(.flexible(maximum: 80)),
+        GridItem(.adaptive(minimum: 100))
     ]
     
     var body: some View {
-        ScrollView(.horizontal) {
-            LazyHGrid(rows: layout, spacing: 20) {
-                ForEach(data, id: \.self) {
-                    item in VStack {
-                        Capsule()
-                            .fill(Color.blue)
-                            .frame(height: 50)
-                        Text(item)
-                            .foregroundColor(.secondary)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: layout, spacing: 20) {
+                    ForEach(data, id: \.self) {
+                        item in VStack {
+                            Capsule()
+                                .fill(Color.blue)
+                                .frame(height: 50)
+                            Text(item)
+                                .foregroundColor(.secondary)
+                        }
                     }
                 }
+                .padding(.horizontal)
             }
+            .navigationTitle("Lazy Grid Samples")
         }
+        
     }
 }
 
