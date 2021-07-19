@@ -11,7 +11,7 @@ struct ContentView: View {
     let data = Array(1...1000).map { "Item \($0)" }
     
     let layout = [
-        GridItem(.adaptive(minimum: 80))
+        GridItem(.flexible())
     ]
     
     var body: some View {
