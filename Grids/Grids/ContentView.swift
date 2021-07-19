@@ -16,9 +16,15 @@ struct ContentView: View {
     
     var body: some View {
         ScrollView {
-            LazyVGrid(columns: layout, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
+            LazyVGrid(columns: layout, alignment: .center, spacing: 20) {
                 ForEach(data, id: \.self) {
-                    item in Text(item)
+                    item in VStack {
+                        Capsule()
+                            .fill(Color.blue)
+                            .frame(height: 50)
+                        Text(item)
+                            .foregroundColor(.secondary)
+                    }
                 }
             }
         }
