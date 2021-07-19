@@ -11,6 +11,8 @@ struct ContentView: View {
     let data = Array(1...1000).map { "Item \($0)" }
     
     let layout = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
         GridItem(.flexible())
     ]
     
