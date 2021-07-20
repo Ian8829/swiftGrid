@@ -12,18 +12,16 @@ struct LevelDetailView: View {
     let data: [String] = Array(1...14).map { "\($0)주차" }
     
     var body: some View {
-        NavigationView {
-					ScrollView {
-						VStack {
-							WeeklyMenuHScrollView(layout: layout, data: data)
-							
-							WeeklyExerciseVScrollView(layout: layout, data: data)
-						}
-						.padding(.horizontal)
-					}
-					.navigationBarHidden(true)
-					.navigationBarTitleDisplayMode(.inline)
+			ScrollView {
+				VStack {
+					WeeklyMenuHScrollView(layout: layout, data: data)
+					
+					WeeklyExerciseVScrollView(layout: layout, data: data)
+				}
+				.padding(.horizontal)
 			}
+			.navigationBarHidden(true)
+			.navigationBarTitleDisplayMode(.inline)
     }
 }
 

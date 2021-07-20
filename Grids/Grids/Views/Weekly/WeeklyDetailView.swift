@@ -32,6 +32,8 @@ struct WeeklyDetailView: View {
 			}
 			.padding()
 		}
+		.navigationBarHidden(true)
+		.navigationBarTitleDisplayMode(.inline)
 	}
 }
 
