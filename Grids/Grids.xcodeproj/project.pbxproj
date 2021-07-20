@@ -10,6 +10,8 @@
 		4800168726A653D500960280 /* LevelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800168626A653D500960280 /* LevelDetailView.swift */; };
 		4800168926A653E500960280 /* WeeklyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800168826A653E500960280 /* WeeklyDetailView.swift */; };
 		4800168D26A6579900960280 /* HomeMainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800168C26A6579900960280 /* HomeMainCardView.swift */; };
+		4800169126A6605F00960280 /* WeeklyMenuHScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800169026A6605F00960280 /* WeeklyMenuHScrollView.swift */; };
+		4800169326A660A500960280 /* WeeklyExerciseVScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800169226A660A500960280 /* WeeklyExerciseVScrollView.swift */; };
 		B332D28626A53CD400554AC9 /* GridsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D28526A53CD400554AC9 /* GridsApp.swift */; };
 		B332D28826A53CD400554AC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D28726A53CD400554AC9 /* ContentView.swift */; };
 		B332D28A26A53CD900554AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B332D28926A53CD900554AC9 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		4800168626A653D500960280 /* LevelDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDetailView.swift; sourceTree = "<group>"; };
 		4800168826A653E500960280 /* WeeklyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyDetailView.swift; sourceTree = "<group>"; };
 		4800168C26A6579900960280 /* HomeMainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainCardView.swift; sourceTree = "<group>"; };
+		4800169026A6605F00960280 /* WeeklyMenuHScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyMenuHScrollView.swift; sourceTree = "<group>"; };
+		4800169226A660A500960280 /* WeeklyExerciseVScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyExerciseVScrollView.swift; sourceTree = "<group>"; };
 		B332D28226A53CD400554AC9 /* Grids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B332D28526A53CD400554AC9 /* GridsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsApp.swift; sourceTree = "<group>"; };
 		B332D28726A53CD400554AC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				4800168826A653E500960280 /* WeeklyDetailView.swift */,
+				4800169026A6605F00960280 /* WeeklyMenuHScrollView.swift */,
+				4800169226A660A500960280 /* WeeklyExerciseVScrollView.swift */,
 			);
 			path = Weekly;
 			sourceTree = "<group>";
@@ -301,7 +307,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4800168926A653E500960280 /* WeeklyDetailView.swift in Sources */,
+				4800169326A660A500960280 /* WeeklyExerciseVScrollView.swift in Sources */,
 				B332D28826A53CD400554AC9 /* ContentView.swift in Sources */,
+				4800169126A6605F00960280 /* WeeklyMenuHScrollView.swift in Sources */,
 				4800168726A653D500960280 /* LevelDetailView.swift in Sources */,
 				4800168D26A6579900960280 /* HomeMainCardView.swift in Sources */,
 				B332D28626A53CD400554AC9 /* GridsApp.swift in Sources */,
