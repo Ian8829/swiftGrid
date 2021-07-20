@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    let data = Array(1...14).map { "\($0)주차 운동" }
+    let data = Array(1...14).map { "\($0)주차" }
     
     let layout = [
         GridItem(.flexible())
@@ -17,21 +17,35 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
                 ScrollView {
-                    LazyVGrid(columns: layout, spacing: 10) {
-                        ForEach(data, id: \.self) {
-                            item in VStack {
-                                Rectangle()
-                                    .fill(Color.secondary)
-                                    .frame(height: 165)
-                                    .cornerRadius(10.0)
-                                Text(item)
-                                    .foregroundColor(.secondary)
+                    VStack {
+                        ScrollView(.horizontal) {
+                            LazyHGrid(rows: layout, spacing: 30) {
+                                ForEach(data, id: \.self) {
+                                    item in HStack {
+                                        Text(item)
+                                    }
+                                }
+                            }
+                            .frame(height: 50.0)
+                        }
+                        
+                        LazyVGrid(columns: layout, spacing: 10) {
+                            ForEach(data, id: \.self) {
+                                item in ZStack {
+                                    Rectangle()
+                                        .fill(Color.secondary)
+                                        .frame(height: 165)
+                                        .cornerRadius(10.0)
+                                    Text("\(item) 운동")
+                                        .foregroundColor(.white)
+                                }
                             }
                         }
                     }
                     .padding(.horizontal)
                 }
-                .navigationTitle("Level 1")
+                .navigationTitle(Text("레벨 1"))
+                .navigationBarTitleDisplayMode(.inline)
             }
     }
 }
