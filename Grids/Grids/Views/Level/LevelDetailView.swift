@@ -20,7 +20,7 @@ struct LevelDetailView: View {
 				}
 				.padding(.horizontal)
 			}
-			.navigationBarHidden(true)
+			.navigationTitle("레벨 1")
 			.navigationBarTitleDisplayMode(.inline)
     }
 }

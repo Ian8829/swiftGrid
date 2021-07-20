@@ -32,7 +32,7 @@ struct WeeklyDetailView: View {
 			}
 			.padding()
 		}
-		.navigationBarHidden(true)
+		.navigationTitle("처음 하체 운동")
 		.navigationBarTitleDisplayMode(.inline)
 	}
 }
