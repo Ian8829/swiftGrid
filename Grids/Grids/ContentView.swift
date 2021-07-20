@@ -18,29 +18,9 @@ struct ContentView: View {
         NavigationView {
                 ScrollView {
                     VStack {
-                        ScrollView(.horizontal) {
-                            LazyHGrid(rows: layout, spacing: 30) {
-                                ForEach(data, id: \.self) {
-                                    item in HStack {
-                                        Text(item)
-                                    }
-                                }
-                            }
-                            .frame(height: 50.0)
-                        }
+                        WeekMenuHScroll(layout: layout, data: data)
                         
-                        LazyVGrid(columns: layout, spacing: 10) {
-                            ForEach(data, id: \.self) {
-                                item in ZStack {
-                                    Rectangle()
-                                        .fill(Color.secondary)
-                                        .frame(height: 165)
-                                        .cornerRadius(10.0)
-                                    Text("\(item) 운동")
-                                        .foregroundColor(.white)
-                                }
-                            }
-                        }
+                        WeekExerciseVScroll(layout: layout, data: data)
                     }
                     .padding(.horizontal)
                 }
@@ -53,5 +33,43 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct WeekMenuHScroll: View {
+    var layout: [GridItem]
+    var data: [String]
+    
+    var body: some View {
+        ScrollView(.horizontal) {
+            LazyHGrid(rows: layout, spacing: 30) {
+                ForEach(data, id: \.self) {
+                    item in HStack {
+                        Text(item)
+                    }
+                }
+            }
+            .frame(height: 50.0)
+        }
+    }
+}
+
+struct WeekExerciseVScroll: View {
+    var layout: [GridItem]
+    var data: [String]
+    
+    var body: some View {
+        LazyVGrid(columns: layout, spacing: 10) {
+            ForEach(data, id: \.self) {
+                item in ZStack {
+                    Rectangle()
+                        .fill(Color.secondary)
+                        .frame(height: 165)
+                        .cornerRadius(10.0)
+                    Text("\(item) 운동")
+                        .foregroundColor(.white)
+                }
+            }
+        }
     }
 }
