@@ -16,7 +16,7 @@ struct LevelDetailView: View {
 	var body: some View {
 		ScrollView {
 			VStack {
-				WeeklyMenuHScrollView(layout: layout, data: data
+				WeeklyMenuHScrollView(layout: layout, data: data)
 				
 				WeeklyExerciseVScrollView(layout: layout, data: data)
 			}
