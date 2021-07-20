@@ -12,9 +12,6 @@ struct WeeklyDetailView: View {
 	
 	var body: some View {
 		VStack {
-			Text("처음 하체 운동")
-			
-			
 			ScrollView(.horizontal) {
 				LazyHStack {
 					ForEach(data, id: \.self) { card in
