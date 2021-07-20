@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4800168726A653D500960280 /* LevelDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800168626A653D500960280 /* LevelDetailView.swift */; };
+		4800168926A653E500960280 /* WeeklyDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4800168826A653E500960280 /* WeeklyDetailView.swift */; };
 		B332D28626A53CD400554AC9 /* GridsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D28526A53CD400554AC9 /* GridsApp.swift */; };
 		B332D28826A53CD400554AC9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D28726A53CD400554AC9 /* ContentView.swift */; };
 		B332D28A26A53CD900554AC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B332D28926A53CD900554AC9 /* Assets.xcassets */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4800168626A653D500960280 /* LevelDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LevelDetailView.swift; sourceTree = "<group>"; };
+		4800168826A653E500960280 /* WeeklyDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyDetailView.swift; sourceTree = "<group>"; };
 		B332D28226A53CD400554AC9 /* Grids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Grids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B332D28526A53CD400554AC9 /* GridsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsApp.swift; sourceTree = "<group>"; };
 		B332D28726A53CD400554AC9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				B332D28926A53CD900554AC9 /* Assets.xcassets */,
 				B332D28E26A53CD900554AC9 /* Info.plist */,
 				B332D28B26A53CD900554AC9 /* Preview Content */,
+				4800168626A653D500960280 /* LevelDetailView.swift */,
+				4800168826A653E500960280 /* WeeklyDetailView.swift */,
 			);
 			path = Grids;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4800168926A653E500960280 /* WeeklyDetailView.swift in Sources */,
 				B332D28826A53CD400554AC9 /* ContentView.swift in Sources */,
+				4800168726A653D500960280 /* LevelDetailView.swift in Sources */,
 				B332D28626A53CD400554AC9 /* GridsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

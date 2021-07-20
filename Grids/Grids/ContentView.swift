@@ -8,68 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
-    let data = Array(1...14).map { "\($0)주차" }
-    
-    let layout = [
-        GridItem(.flexible())
-    ]
-    
-    var body: some View {
-        NavigationView {
-                ScrollView {
-                    VStack {
-                        WeekMenuHScroll(layout: layout, data: data)
-                        
-                        WeekExerciseVScroll(layout: layout, data: data)
-                    }
-                    .padding(.horizontal)
-                }
-                .navigationTitle(Text("레벨 1"))
-                .navigationBarTitleDisplayMode(.inline)
-            }
-    }
+	var body: some View {
+		VStack {
+			HomeMainCardView()
+			
+			Divider()
+			
+			Spacer()
+		}
+	}
+}
+
+struct HomeMainCardView: View {
+	var body: some View {
+		VStack(alignment: .leading, spacing: 4, content: {
+			Text("당신을 위한 단 하나의 운동")
+				.font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+				.padding(.bottom, 40)
+			
+			Rectangle()
+				.foregroundColor(.gray)
+				.frame(height: 300)
+				.cornerRadius(10)
+				.padding(.bottom, 20)
+			
+			Text("레벨1")
+				.padding(.bottom, 10)
+			
+			Text("2주차 코어의 인지를 되살리는 저강도 운동")
+			
+			Text("처음 하체 운동")
+		})
+		.padding(20)
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-    }
-}
-
-struct WeekMenuHScroll: View {
-    var layout: [GridItem]
-    var data: [String]
-    
-    var body: some View {
-        ScrollView(.horizontal) {
-            LazyHGrid(rows: layout, spacing: 30) {
-                ForEach(data, id: \.self) {
-                    item in HStack {
-                        Text(item)
-                    }
-                }
-            }
-            .frame(height: 50.0)
-        }
-    }
-}
-
-struct WeekExerciseVScroll: View {
-    var layout: [GridItem]
-    var data: [String]
-    
-    var body: some View {
-        LazyVGrid(columns: layout, spacing: 10) {
-            ForEach(data, id: \.self) {
-                item in ZStack {
-                    Rectangle()
-                        .fill(Color.secondary)
-                        .frame(height: 165)
-                        .cornerRadius(10.0)
-                    Text("\(item) 운동")
-                        .foregroundColor(.white)
-                }
-            }
-        }
     }
 }
