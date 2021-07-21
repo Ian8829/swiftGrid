@@ -11,23 +11,19 @@ struct WeeklyExerciseVScrollView: View {
 	@Binding var isActive: Bool
 	var layout: [GridItem]
 	var data: [String]
+	var imgArr: [String]
 	
 	var body: some View {
 		LazyVGrid(columns: layout, spacing: 10) {
-			ForEach(data, id: \.self) {
-				item in ZStack {
-					NavigationLink(
-						destination: WeeklyDetailView(),
-						isActive: $isActive
-					) {
-						Rectangle()
-							.fill(Color.secondary)
-							.frame(height: 165)
-							.cornerRadius(10.0)
-					}
-					
-					Text("\(item) 운동")
-						.foregroundColor(.white)
+			ForEach(imgArr, id: \.self) { imgName in
+				NavigationLink(
+					destination: WeeklyDetailView(),
+					isActive: $isActive
+				) {
+					Image(imgName)
+						.resizable()
+						.frame(height: 135)
+						.cornerRadius(5.0)
 				}
 			}
 		}

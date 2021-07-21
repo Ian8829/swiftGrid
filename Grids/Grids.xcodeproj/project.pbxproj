@@ -18,6 +18,7 @@
 		B332D28D26A53CD900554AC9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B332D28C26A53CD900554AC9 /* Preview Assets.xcassets */; };
 		B332D29826A53CD900554AC9 /* GridsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D29726A53CD900554AC9 /* GridsTests.swift */; };
 		B332D2A326A53CD900554AC9 /* GridsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D2A226A53CD900554AC9 /* GridsUITests.swift */; };
+		B3CCE6DC26A807BF00DB3228 /* WeeklyCardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CCE6DB26A807BF00DB3228 /* WeeklyCardModalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		B332D29E26A53CD900554AC9 /* GridsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GridsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B332D2A226A53CD900554AC9 /* GridsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsUITests.swift; sourceTree = "<group>"; };
 		B332D2A426A53CD900554AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3CCE6DB26A807BF00DB3228 /* WeeklyCardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCardModalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				4800168826A653E500960280 /* WeeklyDetailView.swift */,
 				4800169026A6605F00960280 /* WeeklyMenuHScrollView.swift */,
 				4800169226A660A500960280 /* WeeklyExerciseVScrollView.swift */,
+				B3CCE6DB26A807BF00DB3228 /* WeeklyCardModalView.swift */,
 			);
 			path = Weekly;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				4800168726A653D500960280 /* LevelDetailView.swift in Sources */,
 				4800168D26A6579900960280 /* HomeMainCardView.swift in Sources */,
 				B332D28626A53CD400554AC9 /* GridsApp.swift in Sources */,
+				B3CCE6DC26A807BF00DB3228 /* WeeklyCardModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Grids/Preview Content\"";
+				DEVELOPMENT_TEAM = PHX4H3PWZ5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Grids/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -492,6 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Grids/Preview Content\"";
+				DEVELOPMENT_TEAM = PHX4H3PWZ5;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Grids/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;

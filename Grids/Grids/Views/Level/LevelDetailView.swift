@@ -10,14 +10,17 @@ import SwiftUI
 struct LevelDetailView: View {
 	@State private var isActive: Bool = false
 	let layout: [GridItem] = [GridItem(.flexible())]
-	let data: [String] = Array(1...14).map { "\($0)주차" }
+	let data: [String] = Array(1...8).map { "\($0)주차" }
+	let imgArr: [String] = (1...8).map {
+		"LevelDetail\($0)"
+	}
 	
 	var body: some View {
 		ScrollView {
 			VStack {
 				WeeklyMenuHScrollView(isActive: $isActive, layout: layout, data: data)
 				
-				WeeklyExerciseVScrollView(isActive: $isActive, layout: layout, data: data)
+				WeeklyExerciseVScrollView(isActive: $isActive, layout: layout, data: data, imgArr: imgArr)
 			}
 			.padding(.horizontal)
 		}

@@ -22,12 +22,11 @@ struct HomeMainCardView: View {
 					destination: LevelDetailView(),
 					isActive: $isActive
 				) {
-					Rectangle()
-						.foregroundColor(.gray)
+					Image("HomeMain")
+						.resizable()
 						.frame(height: 300)
 						.cornerRadius(10)
 						.padding(.bottom, 10)
-
 				}
 				
 				Text("레벨1")
