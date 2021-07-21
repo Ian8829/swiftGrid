@@ -19,6 +19,8 @@
 		B332D29826A53CD900554AC9 /* GridsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D29726A53CD900554AC9 /* GridsTests.swift */; };
 		B332D2A326A53CD900554AC9 /* GridsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B332D2A226A53CD900554AC9 /* GridsUITests.swift */; };
 		B3CCE6DC26A807BF00DB3228 /* WeeklyCardModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CCE6DB26A807BF00DB3228 /* WeeklyCardModalView.swift */; };
+		B3D26A8D26A8415700CFC91E /* HomeMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D26A8C26A8415700CFC91E /* HomeMainView.swift */; };
+		B3D26A8F26A849A100CFC91E /* HomeBottomHScollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D26A8E26A849A100CFC91E /* HomeBottomHScollView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		B332D2A226A53CD900554AC9 /* GridsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridsUITests.swift; sourceTree = "<group>"; };
 		B332D2A426A53CD900554AC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3CCE6DB26A807BF00DB3228 /* WeeklyCardModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyCardModalView.swift; sourceTree = "<group>"; };
+		B3D26A8C26A8415700CFC91E /* HomeMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMainView.swift; sourceTree = "<group>"; };
+		B3D26A8E26A849A100CFC91E /* HomeBottomHScollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomHScollView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				4800168C26A6579900960280 /* HomeMainCardView.swift */,
+				B3D26A8C26A8415700CFC91E /* HomeMainView.swift */,
+				B3D26A8E26A849A100CFC91E /* HomeBottomHScollView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -314,7 +320,9 @@
 				B332D28826A53CD400554AC9 /* ContentView.swift in Sources */,
 				4800169126A6605F00960280 /* WeeklyMenuHScrollView.swift in Sources */,
 				4800168726A653D500960280 /* LevelDetailView.swift in Sources */,
+				B3D26A8F26A849A100CFC91E /* HomeBottomHScollView.swift in Sources */,
 				4800168D26A6579900960280 /* HomeMainCardView.swift in Sources */,
+				B3D26A8D26A8415700CFC91E /* HomeMainView.swift in Sources */,
 				B332D28626A53CD400554AC9 /* GridsApp.swift in Sources */,
 				B3CCE6DC26A807BF00DB3228 /* WeeklyCardModalView.swift in Sources */,
 			);
