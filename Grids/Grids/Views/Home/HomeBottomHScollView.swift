@@ -9,14 +9,18 @@ import SwiftUI
 
 struct HomeBottomHScollView: View {
 	let layout: [GridItem]
-	let data: [String]
 	
 	var body: some View {
+		let imgArr: [String] = Array(1...3).map {
+			"HomeBottom\($0)"
+		}
+		
 		ScrollView(.horizontal) {
 			LazyHGrid(rows: self.layout, spacing: 10) {
-				ForEach(data, id: \.self) { item in
+				ForEach(imgArr, id: \.self) { img in
 					HStack(spacing: 16) {
-						Rectangle()
+						Image(img)
+							.resizable()
 							.frame(width: 84, height: 84)
 							.cornerRadius(5.0)
 						
@@ -24,7 +28,7 @@ struct HomeBottomHScollView: View {
 							Text("레벨 1")
 								.font(.footnote)
 							
-							Text("2주차 \(item) 미니짐볼 옆면운동")
+							Text("2주차 워크아웃 미니짐볼 옆면운동")
 								.font(.footnote)
 								.padding(.bottom, 4)
 							

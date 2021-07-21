@@ -10,7 +10,6 @@ import SwiftUI
 struct HomeMainView: View {
 	@State private var isActive: Bool = false
 	let layout: [GridItem] = [GridItem(.flexible())]
-	let data: [String] = ["워크아웃1", "워크아웃2", "워크아웃3"]
 	
 	var body: some View {
 		NavigationView {
@@ -33,7 +32,7 @@ struct HomeMainView: View {
 					}
 					
 					
-					HomeBottomHScollView(layout: layout, data: data)
+					HomeBottomHScollView(layout: layout)
 				}
 			}
 			.padding(20)
