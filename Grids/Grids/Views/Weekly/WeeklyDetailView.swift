@@ -18,16 +18,17 @@ struct WeeklyDetailView: View {
 						ZStack {
 							Rectangle()
 								.cornerRadius(20.0)
-								.shadow(radius: 20)
 								.foregroundColor(.gray)
+								.padding(8)
+								.shadow(color: .gray, radius: 5)
 
 							Text(card)
 						}
-						.frame(width: 320.0)
+						.frame(width: 320)
 					}
 				}
 			}
-			.padding()
+			.padding(8)
 		}
 		.navigationTitle("처음 하체 운동")
 		.navigationBarTitleDisplayMode(.inline)
