@@ -9,20 +9,20 @@ import SwiftUI
 
 struct LevelDetailView: View {
 //	TODO: use isActive for back button
-//	@State private var isActive: Bool = false
+	@State private var isActive: Bool = false
 	let layout: [GridItem] = [GridItem(.flexible())]
 	let data: [String] = Array(1...14).map { "\($0)주차" }
 	
 	var body: some View {
 		ScrollView {
 			VStack {
-				WeeklyMenuHScrollView(layout: layout, data: data)
+				WeeklyMenuHScrollView(isActive: $isActive, layout: layout, data: data)
 				
-				WeeklyExerciseVScrollView(layout: layout, data: data)
+				WeeklyExerciseVScrollView(isActive: $isActive, layout: layout, data: data)
 			}
 			.padding(.horizontal)
 		}
-		.navigationTitle("레벨 1")
+		.navigationTitle(isActive ? "" : "레벨 1")
 		.navigationBarTitleDisplayMode(.inline)
 	}
 }

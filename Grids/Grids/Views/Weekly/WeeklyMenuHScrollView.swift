@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct WeeklyMenuHScrollView: View {
-		var layout: [GridItem]
-		var data: [String]
+	@Binding var isActive: Bool
+	var layout: [GridItem]
+	var data: [String]
 		
-		var body: some View {
-				ScrollView(.horizontal) {
-					LazyHGrid(rows: layout, spacing: 30) {
-						ForEach(data, id: \.self) {
-							item in HStack {
-								NavigationLink(destination: WeeklyDetailView()) {
-									Text(item)
-										.foregroundColor(.black)
-								}
+	var body: some View {
+			ScrollView(.horizontal) {
+				LazyHGrid(rows: layout, spacing: 30) {
+					ForEach(data, id: \.self) {
+						item in HStack {
+							NavigationLink(
+								destination: WeeklyDetailView(),
+								isActive: $isActive
+							) {
+								Text(item)
+									.foregroundColor(.black)
 							}
 						}
 					}
-					.frame(height: 50.0)
 				}
-		}
+				.frame(height: 50.0)
+			}
+	}
 }
 
