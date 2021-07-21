@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct LevelDetailView: View {
-//	TODO: use isActive for back button
 	@State private var isActive: Bool = false
 	let layout: [GridItem] = [GridItem(.flexible())]
 	let data: [String] = Array(1...14).map { "\($0)주차" }

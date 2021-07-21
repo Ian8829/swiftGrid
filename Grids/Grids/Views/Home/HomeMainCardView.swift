@@ -41,6 +41,7 @@ struct HomeMainCardView: View {
 			.navigationBarHidden(true)
 			.padding(20)
 		}
+		.accentColor(.black)
 	}
 }
 
