@@ -26,9 +26,13 @@ struct HomeMainView: View {
 						
 						Spacer()
 						
+						// Add navigation to detail
 						Text("See All")
 							.font(.title3)
 							.bold()
+							.onTapGesture {
+								print("tabbed..")
+							}
 					}
 					
 					
