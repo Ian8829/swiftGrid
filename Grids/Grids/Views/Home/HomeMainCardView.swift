@@ -40,7 +40,7 @@ struct HomeMainCardView: View {
 			.navigationBarHidden(true)
 			.padding(20)
 		}
-		.accentColor(.black)
+		.accentColor(Color.init("NavBackBtn"))
 	}
 }
 

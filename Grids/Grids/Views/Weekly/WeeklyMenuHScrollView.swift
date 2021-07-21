@@ -22,7 +22,7 @@ struct WeeklyMenuHScrollView: View {
 								isActive: $isActive
 							) {
 								Text(item)
-									.foregroundColor(.black)
+									.foregroundColor(Color.init("NavBackBtn"))
 							}
 						}
 					}

@@ -16,7 +16,7 @@ struct WeeklyCardModalView: View {
 				showCardModal = false
 			}) {
 				Image(systemName: "xmark")
-					.foregroundColor(.black)
+					.foregroundColor(Color.init("NavBackBtn"))
 			}
 			
 			Image("VideoModal")

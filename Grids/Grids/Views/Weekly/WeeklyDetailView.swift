@@ -28,7 +28,6 @@ struct WeeklyDetailView: View {
 							}
 							.sheet(isPresented: $showCardModal) {
 								WeeklyCardModalView(showCardModal: $showCardModal)
-									.colorScheme(.light)
 							}
 					}
 				}
